@@ -5,11 +5,16 @@
     "react-scripts": "^5.0.0"
   },
   "main": "/index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  },
   "name": "vy6j3f",
+  "homepage": "https://mahmoodnalim.github.io/TicTacToeGame",
   "description": null,
   "version": "0.0.0",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
